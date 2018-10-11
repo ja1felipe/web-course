@@ -1,0 +1,193 @@
+body {
+	background: #e6e6e6;
+}
+
+/*TOPO DO SITE*/
+
+.topo{
+	background: #f8bb05;
+	padding: 15px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-size: 1em;
+}
+
+.logo{
+	padding: 10px;
+}
+
+.logo h1{
+	font-size: 2.5em;
+	color: black;
+	font-weight: bold;
+}
+
+.branco{
+	color: white;
+}
+
+.menu{
+	padding: 15px 10px;
+}
+
+.menu a{
+	padding: 10px 15px;
+}
+
+.menu a:link{
+	color: white;
+	text-decoration: none;
+}
+
+.menu a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+.menu a:hover{
+	background: white;
+	color: #f8bb05;
+}
+
+.menu a:active{
+	background: #e6e6e6;
+	color: #f8bb05;
+}
+
+/*AREA DE CONTEUDO*/
+
+.conteudo{
+	width: 920px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.area-post{
+	font-family: 'Montserrat', sans-serif;
+	width: 660px;
+	float: left;
+	
+}
+
+.posts{
+	background: white;
+	padding: 15px 15px;
+	margin-bottom: 20px;
+}
+.posts h1{
+	color:  #f8bb05;
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+
+.posts h4{
+	color:  black;
+	font-size: 0.75em;
+}
+
+.posts hr{
+	color: gray;
+	opacity: 0.2;
+}
+
+.posts img{
+	width: 100%;
+	height: 100%;
+}
+
+.posts br{
+	font-size: 1em;
+	margin: 5px 0;
+}
+
+.posts a:visited, a:link{
+	color: #f8bb05;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 0.85em;
+}
+.lateral{
+	width: 240px;
+	float: right;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.ultimos{
+	background: white;
+	padding: 15px;
+}
+
+.ultimos h2{
+	color: #97958c;
+	font-size: 1em;
+	font-weight: bold;
+	background: #e6e6e6;
+	padding: 10px;
+}
+
+.ultimos p{
+	margin-top: 5px;
+	font-size: 0.85em;
+	padding: 5px;
+}
+
+.ultimos a:link, a:visited{
+	float: right;
+	color: #f8bb05;
+}
+
+.ultimos hr{
+	opacity: 0.5;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.menu-lateral{
+	background: white;
+	padding: 15px;
+	margin-top: 20px;
+}
+
+.menu-lateral h2{
+	color: #97958c;
+	font-size: 1em;
+	font-weight: bold;
+	background: #e6e6e6;
+	padding: 10px;
+}
+
+.menu-lateral ul{
+	margin-top: 10px;
+}
+
+.menu-lateral li{
+	padding: 5px;
+}
+
+.menu-lateral li:hover{
+	background: #c89704;
+}
+
+.menu-lateral a{
+	padding: 5px;
+}
+
+.menu-lateral a:link{
+	color: #f8bb05;
+	text-decoration: none;
+}
+
+.menu-lateral a:visited{
+	color: #f8bb05;
+	text-decoration: none;
+}
+
+.rodape{
+	background: #f8bb05;
+	text-align: center;
+	padding: 10px;
+}
