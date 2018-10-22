@@ -67,28 +67,27 @@ main{
 	margin-top: 60px;
 	border: 1px solid black;
 }
+#entrevistas, #news, .noticia{
+	background: #f3f3f3 url(../imgs/fundo-caixa.png);
+	padding: 5px;
+}
+aside h3, article h3{
+	display: block;
+	background: #294c71;
+	font-size: 1.1em;
+	color: #fff;
+	padding:5px;
+	font-weight: lighter;
+}
 /*************COLUNA ESQUERDA*************/
 aside{
 	float: left;
 }
-aside h3{
-	display: block;
-	background: #294c71;
-	font-size: 1em;
-	color: #fff;
-	padding:5px;
-	width: 160px;
-	font-weight: lighter;
-}
-#entrevistas, #news{
-	background: #f3f3f3 url(../imgs/fundo-caixa.png);
-	padding: 5px;
-}
+
 #entrevistas ul{
 	list-style: none;
 	padding: 5px 0 0 0;
 }
-
 #entrevistas a:link, a:visited{
 	display: block;
 	font-size: 0.9em;
@@ -104,7 +103,6 @@ aside h3{
 	color: #a1a1a1;
 	padding-left: 20px;
 }
-
 #news{
 	margin-top: 15px;
 }
@@ -129,6 +127,84 @@ aside h3{
 	color: white;
 	margin-top: 3px;
 }
+/*************CONTEUDO PRINCIPAL*************/
+article{
+	float: left;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+article h3{
+}
+.conteudo{
+	background: #fff;
+	margin-top: 5px;
+}
+
+.conteudo img{
+	width: 250px;
+	border: 5px solid #f3f3f3;
+}
+
+.conteudo h3{
+	background: #b10333;
+	font-size: 0.8em;
+	padding: 2px;
+
+	font-weight: bold;
+}
+.conteudo p{
+	width: 230px;
+	font-size: 1em;
+}
+.conteudo a:link, a:visited{
+	color: #b10333;
+}
+.conteudo a:hover{
+	color: #de003e;
+}
+.listas-principais{
+	background: #fff;
+	padding: 5px;
+	margin-top: 5px;
+}
+.listas-principais a:link, a:visited{
+	text-decoration: none;
+}
+.listas-principais img{
+	width: 80px;
+	float: left;
+}
+.listas-principais ul{
+	list-style: none;
+}
+
+.listas-principais li{
+	width: 240px;
+	padding: 10px 5px;	
+	border-bottom: 1px solid #f3f3f3;
+}
+
+.listas-principais h2{
+	float: left;
+	font-size: 0.8em;
+	margin-left: 5px;
+	color: #3e7ab9;
+}
+
+.listas-principais p{
+	float: left;
+	color: black;
+	font-size: 0.75em;
+	width: 150px;
+	margin-left: 5px;
+}
+
+.listas-principais li:hover{
+	background: #f3f3f3;
+	color: black;
+}
+
 .ultimo-lista{
 	border: none;
 }
