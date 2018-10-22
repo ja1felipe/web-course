@@ -10,7 +10,6 @@ body{
 /*************CABEÇALHO TODO*************/
 .container{
 	width: 750px;
-	border: 1px solid red;
 	margin: 0 auto;
 }
 
@@ -20,7 +19,6 @@ body{
 
 .detalhe-topo{
 	float: right;
-	z-index: 1;
 }
 
 header{
@@ -41,14 +39,16 @@ header ul li{
 	background: #b10333 url(../imgs/divisor.png) no-repeat center left;
 }
 
-header ul li a:link, a:visited{
+header ul li a{
 	padding: 15px 20px;
 	display: block;
 	color: #fff;
 	text-decoration: none;
 	line-height: 15px;
 }
-
+header ul li a:visited{
+	color: #fff;
+}
 header ul li a:hover{
 	color: #69001d;
 }
@@ -62,10 +62,13 @@ header ul li a:hover{
 	pointer-events: none;
 	cursor: pointer;
 }
+
+.marcado a{
+	color: #fff;
+}
 /*************AREA CENTRAL*************/
 main{
 	margin-top: 60px;
-	border: 1px solid black;
 }
 #entrevistas, #news, .noticia{
 	background: #f3f3f3 url(../imgs/fundo-caixa.png);
@@ -88,7 +91,7 @@ aside{
 	list-style: none;
 	padding: 5px 0 0 0;
 }
-#entrevistas a:link, a:visited{
+#entrevistas a:link, #entrevistas a:visited{
 	display: block;
 	font-size: 0.9em;
 	color: black;
@@ -156,9 +159,11 @@ article h3{
 .conteudo p{
 	width: 230px;
 	font-size: 1em;
+	margin-left: 8px;
 }
-.conteudo a:link, a:visited{
+.conteudo a:link, .conteudo a:visited{
 	color: #b10333;
+	margin-left: 8px;
 }
 .conteudo a:hover{
 	color: #de003e;
@@ -203,6 +208,50 @@ article h3{
 .listas-principais li:hover{
 	background: #f3f3f3;
 	color: black;
+}
+
+footer{
+	background: #294c71;
+	padding: 20px;
+	color: #fff;
+	margin-top: 20px;
+}
+
+footer .lul{
+	width: 750px;
+	margin: 0 auto;
+}
+.noticia-grande{
+	padding: 5px;
+}
+.noticia-grande .conteudo img{
+	width: 98.1%;
+}
+
+.noticia-grande p, .noticia-grande a{
+	width: 98%;
+	margin-left: 8px;
+}
+.grande{
+	width: 74%;
+	background: #f3f3f3 url(../imgs/fundo-caixa.png);
+}
+
+.noticia-grande .listas-principais li{
+	width: 98%;
+	padding: 10px 5px;	
+	border-bottom: 1px solid #f3f3f3;
+}
+
+.noticia-grande .listas-principais img{
+	float: left;}
+
+.noticia-grande .listas-principais h3{
+	float: none;
+}
+.noticia-grande .listas-principais p{
+	float: none;
+	margin-left: 85px;
 }
 
 .ultimo-lista{
