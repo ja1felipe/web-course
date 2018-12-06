@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	margin: 0;
+}
+body{
+	font: 12px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+	background: #f4f2ec url(../img/fundo.png) repeat-x top left;
+}
+
+#container{
+	width: 1080px;
+	margin: 0 auto;
+}
+
+header{
+	padding: 32px 0 23px 0;
+	height: 31px;
+}
+
+nav{
+	float: right;
+}
+
+nav ul{
+	list-style: none;
+	margin: 5px 20px 5px 5px;
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+a{
+	text-decoration: none;
+}
+
+nav ul li a:link, nav ul li a:active, nav ul li a:visited{
+	color: #af670a;
+	text-transform: uppercase;
+	margin-right: 22px;
+	display: block;
+	padding-bottom: 3px ;
+}
+
+nav ul li a:hover{
+	border-bottom: 1px solid #535858;
+	color: #227115;
+}
+
+section{
+	width: 710px;
+	float: left;
+}
+
+article{
+	width: 310px;
+	margin-bottom: 13px;
+}
+
+article h4{
+	text-transform: uppercase;
+	color: #227115;
+	padding: 13px 0;
+}
+
+#lista ul{
+	padding-left: 40px;
+}
+
+#lista ul li a:visited, #lista ul li a:link, #lista ul li a:active, #texto a:visited,#texto a:link, #texto a:active{
+	color: #af670a;
+}
+
+#mapa, #texto, #video, #lista{
+	float: left;
+}
+
+#lista, #video{
+	padding-left: 25px;
+}
+
+#mapa, #texto{
+	padding: 0 25px 0 35px;
+}
+
+aside{
+	float: right;
+}
+
+#visita{
+	background: #cdc8b1;
+	margin-top: 10px;
+	width: 320px;
+	padding: 13px 15px 23px 15px;
+	margin-bottom: 0px;
+}
+
+#visita h4, #galeria h4{
+	color: #86521a;
+	text-transform: uppercase;
+	padding: 10px 0 5px 0;
+	margin-left: 11px;
+
+}
+
+#data{
+	width: 110px;
+	height: 20px;
+}
+
+#qtd{
+	width: 30px;
+	height: 20px;
+}
+
+#botao{
+	width: 100%;
+	height: 40px;
+	margin-top: 10px;
+	background: #9b9271;
+	color: white;
+	font-size: 1.2em;
+	border: none;
+}
+
+fieldset{
+	margin-left: 3px;
+	border: none;
+}
+
+#galeria{
+	width: 350px;
+	background: #ebe7dd;
+}
+
+#galeria a{
+	display: block;
+	padding: 17px 15px 17px 16px;
+	background: url(../img/fundo-foto.png) no-repeat;
+	float: left;
+	margin: 10px 0 0 20px;
+}
+
+.fotos{
+	padding: 10px 18px;
+}
+
+footer{
+	width: 100%;
+	background: url(../img/fundo-rodape.png) no-repeat center top;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+footer ul{
+	list-style: none;
+	margin: 0 auto;
+}
+
+footer ul li{
+	display: inline-block;
+	padding: 20px 10px;
+}
+
+footer a:visited, footer a:link, footer a:active{
+	color: #af670a;
+}
+
+.clear{
+	clear: both;
+}
