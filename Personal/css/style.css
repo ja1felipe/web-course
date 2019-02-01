@@ -1,0 +1,25 @@
+@media (min-width: 720px) {
+
+    .menufont a:after{
+        content: "|";
+        float: right;
+        color: white;
+        margin-left: 25px;
+        opacity: 0.5;
+    }
+}
+.menufont a{
+    color: #a1a1a1;
+}
+
+.menufont a:hover{
+    color: white;
+}
+
+.menufont2 a{
+    color: #a1a1a1;
+}
+
+.menufont2 a:hover{
+    color: white;
+}
