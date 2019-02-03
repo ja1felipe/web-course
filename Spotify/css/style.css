@@ -1,0 +1,127 @@
+*{
+    font-family: "Helvetica", Arial, sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background: url("../img/capa.png"), url("../img/ruido.png"), linear-gradient(50deg, deeppink, #7c26f8);
+    background-attachment: fixed;
+}
+
+.menu{
+    background: rgba(0, 0, 0,0.6);
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #9bf0e1;
+}
+
+.navbar-light .navbar-toggler {
+    color: white;
+    border-color: rgba(255,255,255,0.5);
+}
+
+.unactive{
+    pointer-events: none;
+    cursor: default;
+}
+
+.btn-custom{
+    width: auto;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 500px;
+    padding: 10px 20px;
+    transition-duration: 0.3s;
+}
+
+
+.btn-roxo{
+    background: #7c25f8;
+}
+
+.btn-roxo:hover{
+    background: #6207e3;
+    color: white;
+}
+
+.btn-branco{
+    background: none;
+    border: 1px solid white;
+
+}
+
+.btn-branco:hover{
+    background: white;
+    color: black;
+}
+
+.home,html,body{
+    height: 100%;
+}
+
+#conteudo{
+    background: white;
+    color: #7c25f8;
+}
+
+#conteudo h1{
+    font-size: 45px;
+}
+
+#conteudo2 h2{
+    color: #9bf0e1;
+}
+
+.iphone{
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+footer{
+    background: black;
+    position: relative;
+    padding: 50px 0 20px 0;
+    font-size: 12.5px;
+}
+
+footer h4{
+    color: darkgray;
+    text-transform: uppercase;
+    font-size: 12.5px;
+}
+
+footer .navbar-nav a{
+    color: white;
+}
+
+footer .navbar-nav li{
+    padding: 3px 0 3px 0;
+}
+
+footer .navbar-nav a:hover{
+    text-decoration: none;
+}
+
+footer i{
+    margin-top: 7px;
+    font-size: 25px;
+}
+
+.rounded-circle{
+    width: 60px;
+    height: 60px;
+}
+
+#controles{
+    transition-duration: 0.5s;
+}
