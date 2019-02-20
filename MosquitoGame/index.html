@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <title>Mosquito</title>
+</head>
+<body>
+
+	<div style="width: 1280px;">
+		<img src="./img/game.png" class="d-block mx-auto">
+		<select name="nivel" class="d-block mx-auto mb-2 form-control w-25" id="nivel">
+			<option value="">Selecione o nível</option>
+			<option value="normal">Normal</option>
+			<option value="hard">Hard</option>
+			<option value="extra">Extra hard</option>
+		</select> 
+		<button class="btn btn-danger mx-auto d-block btn-lg w-25" onclick="a()">Iniciar</button>
+	</div>
+
+
+<script type="text/javascript">
+	function a(){
+		if(document.getElementById('nivel').value === ''){
+			alert('Selecione um nível')
+			return
+		}
+		window.location.href = './jogo.html?' + document.getElementById('nivel').value
+	}
+</script>
+<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="./js/bootstrap.js"></script>
+</body>
+</html>
