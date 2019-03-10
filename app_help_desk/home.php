@@ -1,8 +1,6 @@
 <?php
-  session_start();
-  if(!isset($_SESSION['autenticador']) || $_SESSION['autenticador'] !== 'SIM'){
-    header('Location: index.php?nome=erro2');  
-} ?>
+  require_once "autentica.php"
+?>
 
 <html>
   <head>
@@ -23,29 +21,48 @@
   <body>
 
     <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="home.php">
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
+      <ul class="navbar-nav">
+        <li class="navbar-item">
+          <a class="nav-link" href="logout.php">SAIR</a>
+        </li>
+      </ul>
     </nav>
 
     <div class="container">    
       <div class="row">
 
-        <div class="card-home">
+        <div class="card-home col-4 text-center">
           <div class="card">
             <div class="card-header">
-              Menu
+              <h4>Abrir Chamado</h1>
             </div>
             <div class="card-body">
               <div class="row">
-                <div class="col-6 d-flex justify-content-center">
-                  <img src="formulario_abrir_chamado.png" width="70" height="70">
-                </div>
-                <div class="col-6 d-flex justify-content-center">
-                  <img src="formulario_consultar_chamado.png" width="70" height="70">
+                <div class="d-flex justify-content-center mx-auto">
+                 <a href="abrir_chamado.php"><img src="formulario_abrir_chamado.png" width="70" height="70"></a> 
                 </div>
               </div>
+              <span style="text-transform: uppercase; font-size: 10px;">Clique na imagem para acessar a página.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-home col-4 text-center">
+          <div class="card">
+            <div class="card-header">
+              <h4>Consultar Chamado</h1>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="d-flex justify-content-center mx-auto">
+                  <a href="consultar_chamado.php"><img src="formulario_consultar_chamado.png" width="70" height="70"></a>
+                </div>
+              </div>
+              <span style="text-transform: uppercase; font-size: 10px;">Clique na imagem para acessar a página.</span>
             </div>
           </div>
         </div>

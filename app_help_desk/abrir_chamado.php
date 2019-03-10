@@ -1,8 +1,7 @@
 <?php
-  session_start();
-  if(!isset($_SESSION['autenticador']) || $_SESSION['autenticador'] !== 'SIM'){
-    header('Location: index.php?nome=erro2');  
-} ?>
+  require_once "autentica.php"
+?>
+
 
 <html>
   <head>
@@ -23,10 +22,15 @@
   <body>
 
     <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="home.php">
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
+      <ul class="navbar-nav">
+        <li class="navbar-item">
+          <a class="nav-link" href="logout.php">SAIR</a>
+        </li>
+      </ul>
     </nav>
 
     <div class="container">    
@@ -40,17 +44,15 @@
             <div class="card-body">
               <div class="row">
                 <div class="col">
-                  
-                  <form>
+                  <form action="guarda_chamado.php" method="post">
                     <div class="form-group">
                       <label>Título</label>
-                      <input type="text" class="form-control" placeholder="Título">
+                      <input type="text" class="form-control" placeholder="Título" name="titulo">
                     </div>
                     
                     <div class="form-group">
                       <label>Categoria</label>
-                      <select class="form-control">
-                        <option>Criação Usuário</option>
+                      <select class="form-control" name="categoria">
                         <option>Impressora</option>
                         <option>Hardware</option>
                         <option>Software</option>
@@ -60,12 +62,19 @@
                     
                     <div class="form-group">
                       <label>Descrição</label>
-                      <textarea class="form-control" rows="3"></textarea>
+                      <textarea class="form-control" rows="3" name="descricao"></textarea>
                     </div>
-
+                    <?php 
+                      if(isset($_GET['resultado']) && $_GET['resultado'] === 'sucesso'){?>
+                        <span class="text-success">Consulta aberta com sucesso.</span>
+                    <?php } ?>
+                    <?php 
+                      if(isset($_GET['resultado']) && $_GET['resultado'] === 'erro'){?>
+                        <span class="text-danger">Por favor preencha todos os campos.</span>
+                    <?php } ?>
                     <div class="row mt-5">
                       <div class="col-6">
-                        <button class="btn btn-lg btn-warning btn-block" type="submit">Voltar</button>
+                        <a class="btn btn-lg btn-warning btn-block" href="home.php">Voltar</a>
                       </div>
 
                       <div class="col-6">
